@@ -1,0 +1,21 @@
+---
+title: "dictionary"
+format: html
+---
+
+library(tidyverse)
+
+```{r}
+
+dic_data <- readr::read_csv("data/processed/water_quality_data_xx_final_processed.csv")
+print(colnames(dic_data))
+```
+
+```{r}
+dictionary_data <- data.frame(
+  variable_name = c("Sample - 24/05/2025","Household","Specific sampling place","pH1","pH2","pH3","pHmean","Conductivity 1","Conductivity 2","Conductivity 3","Conductivity Mean","Turbidity1","Turbidity2","Turbidity3","Turbidity mean"),
+  description = c("code to identify the sampling", "code to identify the household", "specification if the sample was taken in the reservoir or point of consumption", "first measurent of pH","second measurent of pH", "third measurent of pH","mean of all 3 pH measurements", "first measurent of electrical conductivity in µS/cm","second measurent of  electrical conductivity in µS/cm", "third measurent of  electrical conductivity in µS/cm","mean of all 3  electrical conductivity in µS/cm measurements","first measurent of turbidity in NTU","second measurent of turbidity in NTU", "third measurent of  turbidity in NTU","mean of all 3  turbidity in NTU measurements")
+)
+
+readr::write_csv(dictionary_data, "data/processed/data_dictionary.csv")
+```

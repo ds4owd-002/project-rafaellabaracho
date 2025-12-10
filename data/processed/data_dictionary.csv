@@ -1,0 +1,16 @@
+variable_name,description
+Sample - 24/05/2025,code to identify the sampling
+Household,code to identify the household
+Specific sampling place,specification if the sample was taken in the reservoir or point of consumption
+pH1,first measurent of pH
+pH2,second measurent of pH
+pH3,third measurent of pH
+pHmean,mean of all 3 pH measurements
+Conductivity 1,first measurent of electrical conductivity in µS/cm
+Conductivity 2,second measurent of  electrical conductivity in µS/cm
+Conductivity 3,third measurent of  electrical conductivity in µS/cm
+Conductivity Mean,mean of all 3  electrical conductivity in µS/cm measurements
+Turbidity1,first measurent of turbidity in NTU
+Turbidity2,second measurent of turbidity in NTU
+Turbidity3,third measurent of  turbidity in NTU
+Turbidity mean,mean of all 3  turbidity in NTU measurements
