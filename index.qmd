@@ -1,4 +1,6 @@
 ---
+library(usethis)
+use_git_config(user.name = "", user.email = "")---
 title: "Capstone Project - rafaellabaracho "
 format:
   html:
