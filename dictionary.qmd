@@ -19,3 +19,8 @@ dictionary_data <- data.frame(
 
 readr::write_csv(dictionary_data, "data/processed/data_dictionary.csv")
 ```
+
+```{r}
+library(usethis)
+use_git_config(user.name = "rafaellabaracho", user.email = "rafaella.baracho.ifbaiano@gmail.com")
+```
